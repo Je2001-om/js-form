@@ -1,0 +1,36 @@
+*{
+
+
+    
+}
+
+.container{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 17px;
+    background: rgba(4, 4, 4, 0.65);
+    padding: 36px 92px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    font-family: arial;
+}
+
+.form{
+
+    margin-top: 15px;
+
+}
+
+.formcontrol{
+
+margin-top: 63px;
+
+}
+.btn{
+
+    margin-top: 4px;
+}
