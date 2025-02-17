@@ -9,49 +9,31 @@
 <body>
 
     <div class="container">
-        <h2>Registration </h2>
+        <h2  id="form-title"> Sign Up  </h2>
         <!--Rigstration--> 
-<form class="form"  id="regform">
-<div   class="formcontrol">
-    <label for="username">Name</label>
-    <input type="text"  id="Name" placeholder="Enter your username" />
-    <span id="name_error"></span>
-</div>
+<form  id="regform"  >
+    <label for="signup-username">Name</label>
+    <input type="text"  id="signup-username" required/>
 
-<div class="formcontrol">
-    <label for="email">Email</label>
-    <input type="text" id="email" placeholder=" your Email" />
-</div>
-<div   class="formcontrol">
-    <label for="password">password</label>
-    <input type="password" id="password" placeholder=" password" />
-</div>
-<button class="btn"  type="submit" >Register</button>
-</div>
-</form>
-<p>I have an account</p>
-<!--log in form--> 
-<div class="container">
-    <h2>Registration </h2>
-<form class="form"  id="logform">
-<div   class="formcontrol">
-<label for="username">Name</label>
-<input type="text"  id="Name" placeholder="Enter your username" />
-<span id="name_error"></span>
-</div>
+    <label for="signup-password"> password</label>
+    <input type="password" id="signup-password" placeholder=" password" required />
 
-<div class="formcontrol">
-<label for="email">Email</label>
-<input type="text" id="email" placeholder=" your Email" />
-</div>
-<div   class="formcontrol">
-<label for="password">password</label>
-<input type="password" id="password" placeholder=" password" />
-</div>
-<button class="btn"  type="submit" >log in</button>
-</div>
+<button  type="button"  id="signup1">sign up</button>
+<p>already have account! <a  href="#" id="login">LOG IN</a></p>
 </form>
 
+      <!--login-->
+<form   id="logform"  class="hidden">
+    <label for="login-email">Email</label>
+    <input type="text" id="login-email" placeholder=" your Email" />
+
+    <label for="login-password"> password</label>
+    <input type="password" id="login-password" placeholder=" password" required />
+
+<button  type="button"  id="login1">Log In</button>
+<p>don't have account! <a  href="#" id="signup">Sign Up</a></p>
+</form>
+</div>
 <script  src="script.js"> </script>
 </body>
 </html>
